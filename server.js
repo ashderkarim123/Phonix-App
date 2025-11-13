@@ -1,4 +1,16 @@
 const express = require("express");
+const app = express();
+
+// your middleware/routes here
+app.get("/", (req, res) => {
+  res.send("Hello from Phonix-App!");
+});
+
+module.exports = app;
+
+
+
+const express = require("express");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const path = require("path");
